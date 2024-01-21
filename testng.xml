@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+	
+<suite name="MyTestSuite">
+
+    <!-- Configuring parameters for the entire suite -->
+    <parameter name="browser" value="chrome" />
+	
+	<listeners>
+		<listener class-name="ParaBank.utils.ExtentReporterNG" />
+	</listeners>
+
+    <test name="MyTest">
+                <classes>
+            <class name="ParaBank.Tests.TestNGBasics" />
+            <class name="ParaBank.Tests.TestNGBasics2" />
+        </classes>
+        
+    </test>
+
+</suite>
