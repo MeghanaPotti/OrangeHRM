@@ -51,7 +51,7 @@ public class LoginPage {
     }
     
     public void validateLogin() {
-		By dashboardText = By.xpath("");
+		By dashboardText = By.xpath("//*[@class=\"oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module\" and text()='Dashboard']");
 		String actualText = webActions.getText(dashboardText);
 		String expectedText = "Dashboard";
 		
@@ -63,11 +63,4 @@ public class LoginPage {
 		}
 	}
 
-    public String getErrorMessage() {
-        By errorMessageLocator = By.id("spanMessage");
-        WebElement errorMessageElement = driver.findElement(errorMessageLocator);
-        String errorMessage = errorMessageElement.getText();
-        System.out.println("Error message displayed: " + errorMessage);
-        return errorMessage;
-    }
-}
+   }
