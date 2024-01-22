@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-21T19:53:34 IST" name="Default suite" finished-at="2024-01-21T19:53:48 IST" duration-ms="14038">
+  <suite started-at="2024-01-22T16:04:06 IST" name="Default suite" finished-at="2024-01-22T16:04:19 IST" duration-ms="12781">
     <groups>
     </groups>
-    <test started-at="2024-01-21T19:53:34 IST" name="Default test" finished-at="2024-01-21T19:53:48 IST" duration-ms="14038">
+    <test started-at="2024-01-22T16:04:06 IST" name="Default test" finished-at="2024-01-22T16:04:19 IST" duration-ms="12781">
       <class name="ParaBank.Tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParaBank.Tests.LoginTest@1ebea008]" started-at="2024-01-21T19:53:34 IST" name="setUp" finished-at="2024-01-21T19:53:38 IST" duration-ms="3387" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ParaBank.Tests.LoginTest@1ebea008]" started-at="2024-01-22T16:04:06 IST" name="setUp" finished-at="2024-01-22T16:04:09 IST" duration-ms="3534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:ParaBank.Tests.LoginTest@1ebea008]" started-at="2024-01-21T19:53:38 IST" name="loginTest" finished-at="2024-01-21T19:53:48 IST" duration-ms="10301" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:ParaBank.Tests.LoginTest@1ebea008]" started-at="2024-01-22T16:04:09 IST" name="loginTest" finished-at="2024-01-22T16:04:18 IST" duration-ms="8894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParaBank.Tests.LoginTest@1ebea008]" started-at="2024-01-21T19:53:48 IST" name="tearDown" finished-at="2024-01-21T19:53:48 IST" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParaBank.Tests.LoginTest@1ebea008]" started-at="2024-01-22T16:04:18 IST" name="tearDown" finished-at="2024-01-22T16:04:19 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -32,10 +32,10 @@ public class BaseClass {
     public ExtentReportUtils extentReportUtils;
     public AssertionUtils assertionUtils;
 
-    public String baseUrl = "https://parabank.parasoft.com/parabank/register.htm";
-    public String userName = "Practise";
-    public String password = "Practise";
-//    public String brandlogo = 
+    public String baseUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+    public String userName = "Admin";
+    public String password = "admin123";
+//    public String brand logo = 
     
     @BeforeClass
     public void setUp() {

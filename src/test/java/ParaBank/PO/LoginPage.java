@@ -22,8 +22,8 @@ public class LoginPage {
     }
 
     public void navigateToLoginPage() {
-        System.out.println("Navigating to the login page: https://parabank.parasoft.com/parabank/index.htm");
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
+        System.out.println("Navigating to the login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     }
 
     public void enterUsername(String username) {
@@ -50,18 +50,18 @@ public class LoginPage {
 
     }
     
-//    public void validateLogin() {
-//		By dashboardText = By.xpath("");
-//		String actualText = webActions.getText(dashboardText);
-//		String expectedText = "Dashboard";
-//		
-//		if(actualText.equals(expectedText)) {
-//			System.out.println("Login successful");
-//		}
-//		else {
-//			System.out.println("Login failed, actual text is "+actualText+" but expected text is "+expectedText);
-//		}
-//	}
+    public void validateLogin() {
+		By dashboardText = By.xpath("");
+		String actualText = webActions.getText(dashboardText);
+		String expectedText = "Dashboard";
+		
+		if(actualText.equals(expectedText)) {
+			System.out.println("Login successful");
+		}
+		else {
+			System.out.println("Login failed, actual text is "+actualText+" but expected text is "+expectedText);
+		}
+	}
 
     public String getErrorMessage() {
         By errorMessageLocator = By.id("spanMessage");

@@ -13,7 +13,7 @@ public class LoginTest extends BaseClass {
 		LoginPage loginPage = new LoginPage(driver);
 
         // Example usage
-        loginPage.login("Practise", "Practise");
+        loginPage.login("Admin", "admin123");
         WebActions.waitForPageToLoad(driver);	
 		captureScreenshot("loginTest");
 		
