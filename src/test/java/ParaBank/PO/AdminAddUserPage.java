@@ -5,26 +5,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import ParaBank.utils.WebActions;
 
-public class AdminJobPage {
+public class AdminAddUserPage {
 	
 	public WebDriver localDriver;
 	private final WebActions app;
 
-		public AdminJobPage(WebDriver driver) {
+		public AdminAddUserPage(WebDriver driver) {
 			localDriver=driver;
 		    PageFactory.initElements(driver, this);
 		    this.app = new WebActions(driver);
 		}
 
-		By dashboardMenu = By.xpath("//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='Dashboard']");
-		
-		By userManagementOption = By.xpath("//span[contains(text(),'Job ')]')]");
-		By jobTitles = By.xpath("//*[contains(text(),'Job Titles')]");
-		By recordsCount = By.xpath("//*[@class='orangehrm-header-container']//*[@class='oxd-icon bi-plus oxd-button-icon']");
-		By addButton = By.xpath("//*[@class=\"orangehrm-header-container\"]//*[@class=\'oxd-icon bi-plus oxd-button-icon\']");
-		By addJobTitlePage = By.xpath("//*[@class=\"oxd-text oxd-text--h6 orangehrm-main-title\" and text()='Add Job Title']");
-		By jobTitle = By.xpath("//*[@class=\'oxd-form-row\']//*[@class=\'oxd-input oxd-input--active\']");
-		By jobDescription = By.xpath("//*[@placeholder=\'Type description here\']");
+//		By dashboardMenu = By.xpath("//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='Dashboard']");
+//		
+//		By userManagementOption = By.xpath("//span[contains(text(),'Job ')]')]");
+//		By jobTitles = By.xpath("//*[contains(text(),'Job Titles')]");
+//		By recordsCount = By.xpath("//*[@class='orangehrm-header-container']//*[@class='oxd-icon bi-plus oxd-button-icon']");
+//		By addButton = By.xpath("//*[@class=\"orangehrm-header-container\"]//*[@class=\'oxd-icon bi-plus oxd-button-icon\']");
+//		By addJobTitlePage = By.xpath("//*[@class=\"oxd-text oxd-text--h6 orangehrm-main-title\" and text()='Add Job Title']");
+//		By jobTitle = By.xpath("//*[@class=\'oxd-form-row\']//*[@class=\'oxd-input oxd-input--active\']");
+//		By jobDescription = By.xpath("//*[@placeholder=\'Type description here\']");
 //		By saveButton = By.xpath("//*[@type='submit]");
 		
 		By adminMenu = By.xpath("//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='Admin']");
