@@ -5,7 +5,7 @@
     <classes>
       <class name="ParaBank.Tests.AdminAddUserTest">
         <methods>
-          <include name="adminNewUser"/>
+          <include name="adminAddUserTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
