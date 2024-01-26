@@ -1,6 +1,7 @@
 package ParaBank.utils;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -39,6 +40,16 @@ public class WebActions {
         return element.getText();
     }
 
+    public String getAttributeValue(By locator, String attributeName) {
+        WebElement element = waitUntilVisible(locator);
+        return element.getAttribute(attributeName);
+    }
+    
+    public String getCssValue(By locator, String propertyName) {
+        WebElement element = waitUntilVisible(locator);
+        return element.getCssValue(propertyName);
+    }
+    
     public void clickDownArrow(By locator) {
     	 WebElement element = waitUntilVisible(locator);
     	 element.sendKeys(Keys.ARROW_DOWN);

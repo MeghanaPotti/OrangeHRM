@@ -10,6 +10,12 @@ public class AdminAddUserPage{
 	public WebDriver localDriver;
 	public final WebActions app;
   
+	public AdminAddUserPage(WebDriver driver) {
+		localDriver=driver;
+	    PageFactory.initElements(driver, this);
+	    this.app = new WebActions(driver);
+	}
+	
 	By usernameInput = By.name("username");
 	By passwordInputLogin = By.name("password");
 	By loginButton = By.xpath("//*[text()=' Login ']");	
@@ -34,12 +40,6 @@ public class AdminAddUserPage{
          app.waitForSeconds(5);
     }
 	
-		public AdminAddUserPage(WebDriver driver) {
-			localDriver=driver;
-		    PageFactory.initElements(driver, this);
-		    this.app = new WebActions(driver);
-		}
-
 		public void adminAddNewUser(String employeeName, String userName, String password) {
 			app.click(adminMenu);
 			app.click(addUserButton);
