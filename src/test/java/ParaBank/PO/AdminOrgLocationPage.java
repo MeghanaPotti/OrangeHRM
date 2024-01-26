@@ -28,12 +28,12 @@ public class AdminOrgLocationPage {
 		By recordsCount = By.xpath("//*[@class='oxd-text oxd-text--span']/parent::div");
 		By addButton = By.xpath("//*[@class='oxd-icon bi-plus oxd-button-icon']");
 		By addLocationPage = By.xpath("//*[@class='oxd-text oxd-text--h6 orangehrm-main-title']");
-		By nameInput = By.xpath("//*[contains(text(),'Name')]/parent::div/following-sibling::div");
-		By cityInput = By.xpath("//*[contains(text(),'City')]/parent::div/following-sibling::div");
-		By pincodeInput = By.xpath("//*[contains(text(),'Zip/Postal Code')]/parent::div/following-sibling::div");
-		By phoneNumberInput = By.xpath("//*[contains(text(),'Phone')]/parent::div/following-sibling::div");
-		By addressInput = By.xpath("//*[contains(text(),'Address')]/parent::div/following-sibling::div");
-		By stateInput = By.xpath("//*[contains(text(),'State/Province')]/parent::div/following-sibling::div");
+		By nameInput = By.xpath("//*[contains(text(),'Name')]/parent::div/following-sibling::div//input");
+		By cityInput = By.xpath("//*[contains(text(),'City')]/parent::div/following-sibling::div//input");
+		By pincodeInput = By.xpath("//*[contains(text(),'Zip/Postal Code')]/parent::div/following-sibling::div//input");
+		By phoneNumberInput = By.xpath("//*[contains(text(),'Phone')]/parent::div/following-sibling::div//input");
+		By addressInput = By.xpath("//*[contains(text(),'Address')]/parent::div/following-sibling::div//*[@placeholder='Type here ...']");
+		By stateInput = By.xpath("//*[contains(text(),'State/Province')]/parent::div/following-sibling::div//input");
 		By countryDropdown = By.xpath("//*[contains(text(),'-- Select --')]");
 		By save = By.xpath("//*[@type='submit']");
 		
@@ -68,9 +68,9 @@ public class AdminOrgLocationPage {
 			if(requiredCountry=="Albania") {
 				app.clickDownArrow(countryDropdown);
 			}
-			
-			app.click(save);
 			app.waitForSeconds(5);
+			app.click(save);
+			
 			
 		}
 

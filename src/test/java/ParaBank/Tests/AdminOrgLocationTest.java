@@ -15,7 +15,7 @@ public class AdminOrgLocationTest extends LoginTest{
 		newLocationPage.login("Admin", "admin123", driver);
 		newLocationPage.adminOrgLocationPage();
 		WebActions.waitForPageToLoad(driver);
-		captureScreenshot("adminAddUserTest");
+		captureScreenshot("adminNewLocation");
 		
 	}	
 	
