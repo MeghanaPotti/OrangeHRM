@@ -1,10 +1,13 @@
 package ParaBank.Tests;
 
+import org.testng.annotations.Test;
+
 import ParaBank.PO.PIMAddEmployeePage;
 import ParaBank.utils.WebActions;
 
 public class PIMEmployeeTest extends LoginTest{
 
+	@Test
 	public void newEmployee() {
 		System.out.println("This is a new employee add method");
 		PIMAddEmployeePage newEmployeePage = new PIMAddEmployeePage(driver);
