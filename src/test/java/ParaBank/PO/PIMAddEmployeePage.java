@@ -19,8 +19,9 @@ public class PIMAddEmployeePage {
 	
 		By usernameInput = By.name("username");
 		By passwordInputLogin = By.name("password");
-		By loginButton = By.xpath("//*[text()=' Login ']");	
-		
+		By loginButton = By.xpath("//*[text()=' Login ']");
+//		By pimMenu = By.xpath("afdnie");
+//		
 		By pimMenu = By.xpath("//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='PIM']");
 		By addEmployee = By.xpath("//*[contains(text(),'Add Employee')]");
 		By employeeFirstName = By.xpath("//*[@name='firstName']");
