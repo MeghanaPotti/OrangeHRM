@@ -24,10 +24,11 @@ public class RecruitmentVacanciesPage {
 	By recruitmentMenu = By.xpath("//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='Recruitment']");	
 	By vacanciesFilter = By.xpath("//*[contains(text(),'Vacancies')]");
 	
-	By jobTitleDropdown = By.xpath("//*[contains(text(),'Job Title')]/parent::div/following-sibling::div//*[@class='oxd-select-text--after']");
-	By vacancyDropdown = By.xpath("//*[contains(text(),'Vacancy')]/parent::div/following-sibling::div//*[@class='oxd-select-text--after']");
-	By hiringManagerDropdown = By.xpath("//*[contains(text(),'Hiring Manager')]/parent::div/following-sibling::div//*[@class='oxd-select-text--after']");
-	By statusDropdown = By.xpath("//*[contains(text(),'Status')]/parent::div/following-sibling::div//*[@class='oxd-select-text--after']");
+//	By jobTitleDropdown = By.xpath("//*[contains(text(),'Job Title')]/parent::div/following-sibling::div//*[@class='oxd-select-text--after']");
+	By jobTitleDropdown = By.xpath("//*[contains(text(),'Job Title')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']");
+	By vacancyDropdown = By.xpath("//*[contains(text(),'Vacancy')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']");
+	By hiringManagerDropdown = By.xpath("//*[contains(text(),'Hiring Manager')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']");
+	By statusDropdown = By.xpath("//*[contains(text(),'Status')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']");
 	By searchButton = By.xpath("//*[@type='submit']");
 	By recordsFound = By.xpath("//*[@class='oxd-text oxd-text--span']/parent::div");	
 	
@@ -46,11 +47,23 @@ public class RecruitmentVacanciesPage {
 		app.click(recruitmentMenu);
 		app.click(vacanciesFilter);
 		
+		app.click(jobTitleDropdown);
 		String jobTitle="Customer Success Manager";
-		if(jobTitle=="Cheif Executive Officer") {
+		if(jobTitle=="Account Assistant") {
+			app.clickDownArrow(jobTitleDropdown);
+		}
+		else if(jobTitle=="Automation Test Engineer") {
+			app.clickDownArrow(jobTitleDropdown);
+			app.clickDownArrow(jobTitleDropdown);
+		}
+		else if(jobTitle=="Cheif Executive Officer") {
+			app.clickDownArrow(jobTitleDropdown);
+			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 		}
 		else if(jobTitle=="Cheif Financial Officer") {
+			app.clickDownArrow(jobTitleDropdown);
+			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 		}
@@ -58,8 +71,12 @@ public class RecruitmentVacanciesPage {
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
+			app.clickDownArrow(jobTitleDropdown);
+			app.clickDownArrow(jobTitleDropdown);
 		}
 		else if(jobTitle=="Content Specialist") {
+			app.clickDownArrow(jobTitleDropdown);
+			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
@@ -71,22 +88,19 @@ public class RecruitmentVacanciesPage {
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
-		}
-		else if(jobTitle=="Database Administrator") {
-			app.clickDownArrow(jobTitleDropdown);
-			app.clickDownArrow(jobTitleDropdown);
-			app.clickDownArrow(jobTitleDropdown);
-			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 		}
-		app.clickEnterKey(hiringManagerDropdown);
+		app.clickEnterKey(jobTitleDropdown);
 		
+		app.click(vacancyDropdown);
 		String vacancy = "Senior Support Specialist";
 		if(vacancy=="Associate IT Manager") {
 			app.clickDownArrow(vacancyDropdown);
+			app.clickDownArrow(vacancyDropdown);
 		}
 		else if(vacancy=="Junior Account Assistant") {
+			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 		}
@@ -94,8 +108,10 @@ public class RecruitmentVacanciesPage {
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
+			app.clickDownArrow(vacancyDropdown);
 		}
 		else if(vacancy=="Sales Representative") {
+			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
@@ -107,8 +123,10 @@ public class RecruitmentVacanciesPage {
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
+			app.clickDownArrow(vacancyDropdown);
 		}
 		else if(vacancy=="Senior Support Specialist") {
+			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
@@ -124,9 +142,11 @@ public class RecruitmentVacanciesPage {
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
 			app.clickDownArrow(vacancyDropdown);
+			app.clickDownArrow(vacancyDropdown);
 		}
 		app.clickEnterKey(vacancyDropdown);
 		
+		app.click(hiringManagerDropdown);
 		String hiringManager="Dominic Chase";
 		if(hiringManager=="Odis Adalwin") {
 			app.clickDownArrow(hiringManagerDropdown);
@@ -155,6 +175,7 @@ public class RecruitmentVacanciesPage {
 		}
 		app.clickEnterKey(hiringManagerDropdown);
 		
+		app.click(statusDropdown);
 		String status="Active";
 		if(status=="Active") {
 			app.clickDownArrow(statusDropdown);
