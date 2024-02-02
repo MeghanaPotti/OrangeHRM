@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-01T17:02:30 IST" name="Default suite" finished-at="2024-02-01T17:02:48 IST" duration-ms="17830">
+  <suite started-at="2024-02-02T17:15:25 IST" name="Default suite" finished-at="2024-02-02T17:15:42 IST" duration-ms="17915">
     <groups>
     </groups>
-    <test started-at="2024-02-01T17:02:30 IST" name="Default test" finished-at="2024-02-01T17:02:48 IST" duration-ms="17830">
+    <test started-at="2024-02-02T17:15:25 IST" name="Default test" finished-at="2024-02-02T17:15:42 IST" duration-ms="17915">
       <class name="ParaBank.Tests.RecruitmentVacanciesTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ParaBank.Tests.RecruitmentVacanciesTest@7b50df34]" started-at="2024-02-01T17:02:30 IST" name="setUp" finished-at="2024-02-01T17:02:36 IST" duration-ms="5814" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ParaBank.Tests.RecruitmentVacanciesTest@7b50df34]" started-at="2024-02-02T17:15:25 IST" name="setUp" finished-at="2024-02-02T17:15:31 IST" duration-ms="6235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="vacanciesSearch()[pri:0, instance:ParaBank.Tests.RecruitmentVacanciesTest@7b50df34]" started-at="2024-02-01T17:02:36 IST" name="vacanciesSearch" finished-at="2024-02-01T17:02:48 IST" duration-ms="11526" status="FAIL">
+        <test-method signature="vacanciesSearch()[pri:0, instance:ParaBank.Tests.RecruitmentVacanciesTest@7b50df34]" started-at="2024-02-02T17:15:31 IST" name="vacanciesSearch" finished-at="2024-02-02T17:15:42 IST" duration-ms="11170" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -19,10 +19,10 @@
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [28fc9963d607cca4e930f1828ced8338, sendKeysToElement {id=0A7FF666DDF27B3E7C005FB830FAC0C4_element_96, value=[Ljava.lang.CharSequence;@288214b1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\POTTI~1.MEG\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52328/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (28fc9963d607cca4e930f1828ced8338)] -> xpath: //*[contains(text(),'Job Title')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']]
-Session ID: 28fc9963d607cca4e930f1828ced8338]]>
+Command: [34b6ad8fa982d1e302d57b94fd639672, sendKeysToElement {id=4E4F476C14236927A5A820E6834C8930_element_3087, value=[Ljava.lang.CharSequence;@28501a4b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\POTTI~1.MEG\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52916/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34b6ad8fa982d1e302d57b94fd639672)] -> xpath: //*[contains(text(),'Job Title')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']]
+Session ID: 34b6ad8fa982d1e302d57b94fd639672]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -30,10 +30,10 @@ Session ID: 28fc9963d607cca4e930f1828ced8338]]>
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [28fc9963d607cca4e930f1828ced8338, sendKeysToElement {id=0A7FF666DDF27B3E7C005FB830FAC0C4_element_96, value=[Ljava.lang.CharSequence;@288214b1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\POTTI~1.MEG\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52328/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (28fc9963d607cca4e930f1828ced8338)] -> xpath: //*[contains(text(),'Job Title')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']]
-Session ID: 28fc9963d607cca4e930f1828ced8338
+Command: [34b6ad8fa982d1e302d57b94fd639672, sendKeysToElement {id=4E4F476C14236927A5A820E6834C8930_element_3087, value=[Ljava.lang.CharSequence;@28501a4b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\POTTI~1.MEG\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52916}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52916/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34b6ad8fa982d1e302d57b94fd639672)] -> xpath: //*[contains(text(),'Job Title')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']]
+Session ID: 34b6ad8fa982d1e302d57b94fd639672
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -49,7 +49,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
 at ParaBank.utils.WebActions.clickDownArrow(WebActions.java:55)
-at ParaBank.PO.RecruitmentVacanciesPage.validateRecruitmentVacancies(RecruitmentVacanciesPage.java:92)
+at ParaBank.PO.RecruitmentVacanciesPage.validateRecruitmentVacancies(RecruitmentVacanciesPage.java:85)
 at ParaBank.Tests.RecruitmentVacanciesTest.vacanciesSearch(RecruitmentVacanciesTest.java:15)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -85,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vacanciesSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParaBank.Tests.RecruitmentVacanciesTest@7b50df34]" started-at="2024-02-01T17:02:48 IST" name="tearDown" finished-at="2024-02-01T17:02:48 IST" duration-ms="419" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ParaBank.Tests.RecruitmentVacanciesTest@7b50df34]" started-at="2024-02-02T17:15:42 IST" name="tearDown" finished-at="2024-02-02T17:15:42 IST" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

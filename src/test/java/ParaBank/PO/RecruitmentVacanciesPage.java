@@ -24,7 +24,6 @@ public class RecruitmentVacanciesPage {
 	By recruitmentMenu = By.xpath("//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and text()='Recruitment']");	
 	By vacanciesFilter = By.xpath("//*[contains(text(),'Vacancies')]");
 	
-//	By jobTitleDropdown = By.xpath("//*[contains(text(),'Job Title')]/parent::div/following-sibling::div//*[@class='oxd-select-text--after']");
 	By jobTitleDropdown = By.xpath("//*[contains(text(),'Job Title')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']");
 	By vacancyDropdown = By.xpath("//*[contains(text(),'Vacancy')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']");
 	By hiringManagerDropdown = By.xpath("//*[contains(text(),'Hiring Manager')]/ancestor::div[contains(@class,'oxd-input-group oxd-input-field-bottom-space')]//*[@class='oxd-select-text--after']");
@@ -49,10 +48,10 @@ public class RecruitmentVacanciesPage {
 		
 		app.click(jobTitleDropdown);
 		String jobTitle="Customer Success Manager";
-		if(jobTitle=="Account Assistant") {
+		if(jobTitle=="dd") {
 			app.clickDownArrow(jobTitleDropdown);
 		}
-		else if(jobTitle=="Automation Test Engineer") {
+		else if(jobTitle=="ed") {
 			app.clickDownArrow(jobTitleDropdown);
 			app.clickDownArrow(jobTitleDropdown);
 		}
