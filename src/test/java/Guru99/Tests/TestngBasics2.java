@@ -1,4 +1,4 @@
-package ParaBank.Tests;
+package Guru99.Tests;
 
 	import org.testng.Assert;
 	import org.testng.annotations.*;

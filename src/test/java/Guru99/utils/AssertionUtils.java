@@ -1,4 +1,4 @@
-package ParaBank.utils;
+package Guru99.utils;
 
 import org.testng.Assert;
 

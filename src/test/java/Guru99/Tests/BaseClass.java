@@ -1,4 +1,4 @@
-package ParaBank.Tests;
+package Guru99.Tests;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,7 +17,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import ParaBank.utils.AssertionUtils;
+
+import Guru99.utils.AssertionUtils;
 
 
 
@@ -25,9 +26,7 @@ public class BaseClass {
     public WebDriver driver;
     public AssertionUtils assertionUtils;
 
-    public String baseUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
-    public String userName = "Admin";
-    public String password = "admin123";
+    public String baseUrl = "https://demo.guru99.com/";
 
     
     @BeforeClass

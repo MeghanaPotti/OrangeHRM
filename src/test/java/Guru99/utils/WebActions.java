@@ -1,4 +1,4 @@
-package ParaBank.utils;
+package Guru99.utils;
 
 import java.time.Duration;
 import java.util.List;
@@ -66,6 +66,14 @@ public class WebActions {
 
     public void waitForElementToBeClickable(By locator) {
         waitUntilClickable(locator);
+    }
+    
+    public List<WebElement> findElements(By locator) {
+        List<WebElement> elements = driver.findElements(locator);
+        if (elements.isEmpty()) {
+            System.out.println("No elements found with locator: " + locator);
+        }
+        return elements;
     }
 
     private WebElement waitUntilVisible(By locator) {
