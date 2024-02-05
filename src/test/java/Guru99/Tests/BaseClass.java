@@ -26,7 +26,12 @@ public class BaseClass {
     public WebDriver driver;
     public AssertionUtils assertionUtils;
 
-    public String baseUrl = "https://demo.guru99.com/";
+    public String baseUrl = "https://demo.guru99.com/test/newtours/";
+    public String userName = "mngr551929";
+    public String password = "ErUrAte";
+    
+    public String userIdBank = "Guru99";
+    public String passwordBank = "Guru99";
 
     
     @BeforeClass
