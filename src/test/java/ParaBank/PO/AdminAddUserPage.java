@@ -1,7 +1,10 @@
 package ParaBank.PO;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import ParaBank.utils.WebActions;
 
@@ -30,6 +33,10 @@ public class AdminAddUserPage{
 	By confirmPasswordInput = By.xpath("//*[contains(text(),'Confirm Password')]/parent::div/following-sibling::div");
 	By saveButton = By.xpath("//*[@class='oxd-form-actions']//*[@type='submit']");
 	
+	By noOfRecords = By.xpath("//*[@class='oxd-table-body']//*[@class='oxd-table-card']");
+//	By userNameRecords = By.xpath("//*[@class='oxd-table-body']//*[@class='oxd-table-card'][row]//*[@class='oxd-table-cell oxd-padding-cell'][2]");
+	String userNameRecords = "//*[@class='oxd-table-body']//*[@class='oxd-table-card'][row]//*[@class='oxd-table-cell oxd-padding-cell'][2]";
+	
 	 public void login(String username, String password, WebDriver driver) {
     	 System.out.println("Navigating to the login page: https://opensource-demo.orangehrmlive.com/");
          driver.get("https://opensource-demo.orangehrmlive.com/");
@@ -40,8 +47,12 @@ public class AdminAddUserPage{
          app.waitForSeconds(5);
     }
 	
-		public void adminAddNewUser(String employeeName, String userName, String password) {
+		public void adminAddNewUser(String userName, String password) {
 			app.click(adminMenu);
+			
+			List<String> adminUsername = getUsername();
+			String employeeName = adminUsername.get(1);
+			
 			app.click(addUserButton);
 			app.click(userRoleDropDown);
 			
@@ -73,5 +84,20 @@ public class AdminAddUserPage{
 			app.sendKeys(confirmPasswordInput, password);
 			app.click(saveButton);                          // Check created user details in the records and print it
 		}				
+		
+	    public List<String> getUsername() {
+			 List<WebElement> elements = app.findElements(noOfRecords);
+			 List<String> usernameList = new ArrayList<>();
+			 
+			 for(int i=0; i<elements.size(); i++) {
+				 
+				String userNameRecordsData = userNameRecords.replace("row", String.valueOf(i));
+				String obtainedUsername = app.getText(By.xpath(userNameRecordsData));
+				System.out.println("Username " + i + "is "+obtainedUsername);
+				usernameList.add(obtainedUsername);	
+			 }
+			 
+			 return usernameList;	 
+		}
 		
 }

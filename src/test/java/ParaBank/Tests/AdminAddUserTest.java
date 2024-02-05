@@ -13,7 +13,7 @@ public class AdminAddUserTest extends LoginTest{
 		System.out.println("This is an admin add user method");
 		AdminAddUserPage newUserPage = new AdminAddUserPage(driver);
 		newUserPage.login("Admin", "admin123", driver);
-		newUserPage.adminAddNewUser("Charlie Carter", "Admin", "@Admin123");
+		newUserPage.adminAddNewUser("Admin", "@Admin123");
 		WebActions.waitForPageToLoad(driver);
 		captureScreenshot("adminAddUserTest");
 	}
