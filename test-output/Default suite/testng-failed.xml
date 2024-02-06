@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ParaBank.Tests.RecruitmentVacanciesTest">
+      <class name="Guru99.Tests.NewToursTest">
         <methods>
-          <include name="vacanciesSearch"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="newTours"/>
         </methods>
-      </class> <!-- ParaBank.Tests.RecruitmentVacanciesTest -->
+      </class> <!-- Guru99.Tests.NewToursTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

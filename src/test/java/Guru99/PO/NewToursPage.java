@@ -16,7 +16,7 @@ public class NewToursPage {
 	    this.app = new WebActions(driver);
 	}
 	
-	By flightsOption = By.xpath("Flights");
+	By flightsOption = By.xpath("//*[contains(text(),'Flights')]");
 	By fromPort = By.xpath("//*[@name='fromPort']");
 	By fromMonth = By.xpath("//*[@name='fromMonth']");
 	By fromDay = By.xpath("//*[@name='fromDay']");
