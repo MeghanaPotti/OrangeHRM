@@ -16,7 +16,7 @@ public class TelecomAddCustomerPage {
 	
 	By telecomProjectOption = By.xpath("//*[contains(text(),'Telecom Project')]");
 	By addCustomerOption = By.xpath("//*[@class='flex-item left']//*[contains(text(),'Add Customer')]");
-	By doneRadioButton = By.xpath("//*[@id='done']");
+	By doneRadioButton = By.xpath("//*[@for='done']");
 	By firstNameInput = By.xpath("//*[@id='fname']");
 	By lastNameInput = By.xpath("//*[@id='lname']");
 	By emailInput = By.xpath("//*[@id='email']");
