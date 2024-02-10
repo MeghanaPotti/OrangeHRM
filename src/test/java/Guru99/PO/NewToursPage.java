@@ -62,7 +62,7 @@ public class NewToursPage {
 		
 		String arrivingLocationXpath = "//*[@name=\'toPort\']//*[contains(text(),'dynamicValue')]";
 		app.click(toPort);
-		String toPortDropdown = "SydneyS";
+		String toPortDropdown = "Sydney";
 		String toPortDropdownSelect = arrivingLocationXpath.replace("dynamicValue", toPortDropdown);
 		app.click(By.xpath(toPortDropdownSelect));
 		

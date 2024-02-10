@@ -9,7 +9,7 @@ public class NewToursTest extends BaseClass{
 
 	@Test
 	public void newTours() {
-		System.out.println("Flight booking page method in new tours");
+		System.out.println(" validating Flight booking page method in new tours");
 		NewToursPage newToursObject = new NewToursPage(driver);
 		newToursObject.login("mngr551929", "ErUrAte");
 		newToursObject.findingFlights();
