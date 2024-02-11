@@ -68,7 +68,7 @@ public class NewToursPage {
 		
 		String toMonthXpath = "//*[@name='toMonth']//*[contains(text(),'dynamicValue')]";
 		app.click(toMonth);
-		String toMonthDropdown = "September";
+		String toMonthDropdown = "October";
 		String toMonthDropdownSelect = toMonthXpath.replace("dynamicValue", toMonthDropdown);
 		app.click(By.xpath(toMonthDropdownSelect));
 		
